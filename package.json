@@ -1,0 +1,22 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VernoB/Advanced_Css.git"
+  },
+  "author": "Vernob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VernoB/Advanced_Css/issues"
+  },
+  "homepage": "https://github.com/VernoB/Advanced_Css#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
