@@ -1,0 +1,57 @@
+@keyframes moveInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+    filter: blur(0);
+  }
+  40% {
+    filter: blur(1rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(1rem);
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes moveInRight {
+  from {
+    opacity: 0;
+    transform: translateX(10rem);
+    filter: blur(0);
+  }
+  40% {
+    filter: blur(1rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-1rem);
+    filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes moveInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+    filter: blur(0);
+  }
+  40% {
+    filter: blur(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
