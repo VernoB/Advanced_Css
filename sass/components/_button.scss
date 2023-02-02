@@ -52,7 +52,8 @@
 }
 
 .btn-text {
-  &:link &:visited {
+  &:link,
+  &:visited {
     font-size: $default-fontSize;
     color: $color-primary;
     display: inline-block;
