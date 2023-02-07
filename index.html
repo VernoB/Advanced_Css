@@ -18,11 +18,13 @@
   <body>
     <header class="header">
       <div class="header__logo-box">
-        <img
-          src="./img/logo-white.png"
-          alt="Natural Toours"
-          class="header__logo"
-        />
+        <a href="#">
+          <img
+            src="./img/logo-white.png"
+            alt="Natural Toours"
+            class="header__logo"
+          />
+        </a>
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -138,7 +140,7 @@
         </div>
       </section>
       <!--  SECTION TOURS-->
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">The tours you may love</h2>
         </div>
@@ -166,7 +168,17 @@
               </div>
               <!-- CARD BACK -->
               <div class="card__side card__side--back card__side--back-1">
-                <div class="card__text">BACK</div>
+                <div class="card__text">
+                  <div class="card__cta">
+                    <div class="card__price">
+                      <div class="card__price--only">Only</div>
+                      <div class="card__price--value">$ 269</div>
+                    </div>
+                    <a href="#popup" class="btn btn--white" title="cta"
+                      >Book now</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -176,6 +188,33 @@
       </section>
     </main>
   </body>
+
+  <footer class="footer__link">Footer</footer>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="img/nat-8.jpg" alt="Tour" class="popup__img" />
+        <img src="img/nat-9.jpg" alt="Tour" class="popup__img" />
+      </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">X</a>
+        <h2 class="heading-secondary">Start booking now !</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">
+          Important &ndash; please read this term before booking!
+        </h3>
+        <p class="popup__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident,
+          ipsam odio. Repudiandae optio, suscipit neque eligendi corporis facere
+          architecto accusamus aperiam iure, sint quaerat reiciendis maiores sit
+          voluptas blanditiis magni eos dolorem doloremque. Est earum, natus
+          similique error voluptatibus deserunt, sunt eum ut expedita modi
+          blanditiis a sit quam odit.
+        </p>
+        <a href="#" class="btn btn--green" title="tour"> Book the tour</a>
+      </div>
+    </div>
+  </div>
 </html>
 
 <!-- 

@@ -229,6 +229,13 @@ body {
 .btn--white::after {
   background-color: azure;
 }
+.btn--green {
+  background-color: #55c57a;
+  color: #000;
+}
+.btn--green::after {
+  background-color: #55c57a;
+}
 .btn::after {
   content: "";
   display: inline-block;
@@ -337,6 +344,7 @@ body {
 .card__details {
   display: flex;
   justify-content: center;
+  color: rgba(240, 255, 255, 0.8);
 }
 .card__details ul {
   list-style: none;
@@ -349,6 +357,102 @@ body {
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #777;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price {
+  padding-top: 2rem;
+  color: azure;
+}
+.card__price--only {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.card__price--value {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-bottom: 4rem;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 119, 48, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup__close:link, .popup__close:visited {
+  font-size: medium;
+  font-weight: 400;
+  top: 0;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s 0.2s;
+}
+.popup__close:link:hover, .popup__close:visited:hover {
+  color: rgba(255, 119, 48, 0.8);
+}
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  border-radius: 5px;
+  background-color: azure;
+  box-shadow: 0 2rem 4rem rgba(119, 119, 119, 0.8);
+  z-index: 100;
+  display: table;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.4s 0.2s;
+}
+.popup__left {
+  width: 33.333333%;
+  display: table-cell;
+}
+.popup__right {
+  width: 66.6666667%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+  position: relative;
+}
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid #f7f7f7;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.popup__img {
+  display: block;
+  width: 100%;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .header {
